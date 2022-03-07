@@ -9,9 +9,6 @@ import constants
 
 def main():
     # This function calculates the cost of a pizza
-    constants.LABOR
-    constants.RENT
-    constants.MATERIAL_PER_INCH
 
     # input
     diameter = int(input("Enter the diameter of the pizza you would like (inch): "))
