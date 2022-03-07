@@ -4,15 +4,22 @@
 # Created on March 2022
 # This is the math program, with proper style
 
+import constants
+
 
 def main():
     # This function calculates the cost of a pizza
+    constants.LABOR
+    constants.RENT
+    constants.MATERIAL_PER_INCH
 
     # input
     diameter = int(input("Enter the diameter of the pizza you would like (inch): "))
 
     # process
-    untaxed_price = 0.75 + 1.00 + 0.5 * diameter
+    untaxed_price = (
+        constants.LABOR + constants.RENT + constants.MATERIAL_PER_INCH * diameter
+    )
     HST = untaxed_price * 0.13
     total_cost = untaxed_price + HST
 
