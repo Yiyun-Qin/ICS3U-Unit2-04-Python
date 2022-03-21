@@ -17,7 +17,7 @@ def main():
     untaxed_price = (
         constants.LABOR + constants.RENT + constants.MATERIAL_PER_INCH * diameter
     )
-    HST = untaxed_price * 0.13
+    HST = untaxed_price * constants.TAX_NUMBER
     total_cost = untaxed_price + HST
 
     # output
